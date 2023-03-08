@@ -12,9 +12,10 @@ body {
 }
 
 .mainbox {
-  display: flex;
   width: 500px;
   height: 500px;
+  display: flex;
+  flex-direction: column;
   background-color: lightsalmon;
   margin: auto;
 }
@@ -24,6 +25,14 @@ body {
   color: black;
   font-weight: bold;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 30px 30px;
+  background-color: darkorange;
+}
+.playboard {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  background-color: darkgoldenrod;
 }
